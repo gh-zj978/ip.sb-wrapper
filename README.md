@@ -8,3 +8,6 @@ usage:
 
 # Depends
 `curl jq`
+
+# Install
+`curl -LO https://github.com/gh-zj978/ipsb-wrapper/raw/refs/heads/main/ipsb && chmod +x ipsb && mv ./ipsb $PREFIX/usr/local/bin/`
