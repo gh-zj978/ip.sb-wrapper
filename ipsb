@@ -1,0 +1,13 @@
+#! /bin/bash
+case "${1:-ip}" in
+	ip)
+		curl -A "Mozilla/5.0" https://api.ip.sb/jsonip 2>/dev/null | jq
+	;;
+	whereami)
+		curl -A "Mozilla/5.0" https://api.ip.sb/geoip 2>/dev/null | jq
+	;;
+	help)
+		echo 'usage: '
+		echo '   ipsb ip/whereami/help'
+	;;
+esac
