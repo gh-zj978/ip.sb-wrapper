@@ -1,10 +1,10 @@
 #! /bin/bash
 case "${1:-ip}" in
 	ip)
-		curl -sA "Mozilla/5.0" https://api.ip.sb/jsonip | jq
+		curl -sA "ipsb-wrapper/5.0" https://api.ip.sb/jsonip | jq
 	;;
 	whereami)
-		curl -sA "Mozilla/5.0" https://api.ip.sb/geoip | jq
+		curl -sA "ipsb-wrapper/5.0" https://api.ip.sb/geoip | jq
 	;;
 	help|*)
 		echo 'usage: '
