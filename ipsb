@@ -8,6 +8,6 @@ case "${1:-ip}" in
 	;;
 	help|*)
 		echo 'usage: '
-		echo '   ipsb ip / help / whereisit(w)+[ip address](default=my-ip)'
+		echo '   ipsb ip(default) / help / whereisit(w)+[ip address](default=my-ip)'
 	;;
 esac
