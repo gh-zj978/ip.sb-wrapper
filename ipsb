@@ -1,13 +1,13 @@
 #! /bin/bash
 case "${1:-ip}" in
 	ip)
-		curl -sA "ipsb-wrapper/1.0" https://api.ip.sb/jsonip | jq
+		curl -sfA "ipsb-wrapper/1.0" https://api.ip.sb/jsonip | jq
 	;;
-	whereami)
-		curl -sA "ipsb-wrapper/1.0" https://api.ip.sb/geoip | jq
+	whereisit|w)
+		curl -sfA "ipsb-wrapper/1.0" "https://api.ip.sb/geoip/${2}" | jq
 	;;
 	help|*)
 		echo 'usage: '
-		echo '   ipsb ip/whereami/help'
+		echo '   ipsb ip / help / whereisit(w)+[ip address](default=my-ip)'
 	;;
 esac
