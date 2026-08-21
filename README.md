@@ -11,5 +11,5 @@ usage:
 
 # Install
 ```bash
-curl -LO https://github.com/gh-zj978/ipsb-wrapper/raw/refs/heads/main/ipsb && chmod +x ipsb && mv ./ipsb $PREFIX/bin/
+curl -LO https://github.com/gh-zj978/ip.sb-wrapper/raw/refs/heads/main/ipsb && chmod +x ipsb && mv ./ipsb $PREFIX/bin/
 ```
